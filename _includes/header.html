@@ -1,7 +1,7 @@
 <header class="site-header">
 
   <div class="site-header__banner">
-    <a href="/"><img src="{{ "images/logo.png" | prepend: site.baseurl | prepend: site.url }}" alt="Pump Cottage"></a>
+    <a href="/"><img src="{{ "/images/logo.png" | prepend: site.baseurl | prepend: site.url }}" alt="Pump Cottage"></a>
     <div class="site-header__banner__book">
       <a href="/contact"><button>Book: 01305 457840</button></a>
     </div>
@@ -11,14 +11,14 @@
     <ul>
       <li><a href="{{"" | prepend: site.baseurl | prepend: site.url }}">Home</a></li>
       <li>
-        <a href="{{"accommodation" | prepend: site.baseurl | prepend: site.url }}">Accommodation</a>
+        <a href="{{"/accommodation" | prepend: site.baseurl | prepend: site.url }}">Accommodation</a>
         <ul>
-          <li><a href="{{"accommodation" | prepend: site.baseurl | prepend: site.url }}">Bed &amp; Breakfast</a></li>
-          <li><a href="{{"accommodation#holidaylets" | prepend: site.baseurl | prepend: site.url }}">Holiday Lets</a></li>
+          <li><a href="{{"/accommodation" | prepend: site.baseurl | prepend: site.url }}">Bed &amp; Breakfast</a></li>
+          <li><a href="{{"/accommodation#holidaylets" | prepend: site.baseurl | prepend: site.url }}">Holiday Lets</a></li>
         </ul>
       </li>
-      <li><a href="{{"location" | prepend: site.baseurl | prepend: site.url }}">Location</a></li>
-      <li><a href="{{"contact" | prepend: site.baseurl | prepend: site.url }}">Contact</a></li>
+      <li><a href="{{"/location" | prepend: site.baseurl | prepend: site.url }}">Location</a></li>
+      <li><a href="{{"/contact" | prepend: site.baseurl | prepend: site.url }}">Contact</a></li>
     </ul>
 
     </nav>
