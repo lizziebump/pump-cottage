@@ -1,0 +1,421 @@
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+audio, canvas, progress, video {
+  display: inline-block;
+  vertical-align: baseline; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+[hidden], template {
+  display: none; }
+
+a {
+  background-color: transparent; }
+
+a:active, a:hover {
+  outline: 0; }
+
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+b, strong {
+  font-weight: 700; }
+
+dfn {
+  font-style: italic; }
+
+h1 {
+  font-size: 2em;
+  margin: .67em 0; }
+
+mark {
+  background: #ff0;
+  color: #000; }
+
+small {
+  font-size: 80%; }
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -.5em; }
+
+sub {
+  bottom: -.25em; }
+
+img {
+  border: 0; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+figure {
+  margin: 1em 40px; }
+
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+pre {
+  overflow: auto; }
+
+code, kbd, pre, samp {
+  font-family: monospace,monospace;
+  font-size: 1em; }
+
+button, input, optgroup, select, textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0; }
+
+button {
+  overflow: visible; }
+
+button, select {
+  text-transform: none; }
+
+button, html input[type=button], input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+button[disabled], html input[disabled] {
+  cursor: default; }
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+input {
+  line-height: normal; }
+
+input[type=checkbox], input[type=radio] {
+  box-sizing: border-box;
+  padding: 0; }
+
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+  height: auto; }
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: .35em .625em .75em; }
+
+legend {
+  border: 0;
+  padding: 0; }
+
+textarea {
+  overflow: auto; }
+
+optgroup {
+  font-weight: 700; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td, th {
+  padding: 0; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
+* {
+  box-sizing: border-box; }
+
+:root, body {
+  min-height: 100%; }
+
+body {
+  font-family: "Baskerville", serif; }
+
+.text-link {
+  text-decoration: underline;
+  transition: all 0.2s ease-in-out; }
+  .text-link:hover {
+    color: #C6B19F; }
+
+.site-header {
+  width: 100vw;
+  background: #EAE1DA; }
+
+.site-header__banner {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .site-header__banner img {
+    max-height: 100px; }
+  @media screen and (max-width: 700px) {
+    .site-header__banner {
+      flex-direction: row;
+      justify-content: center; }
+      .site-header__banner div {
+        display: none; } }
+
+.site-header__banner__book {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 1em;
+  max-width: 15em; }
+
+.site-header__banner button {
+  -webkit-appearance: none;
+  border: none;
+  box-shadow: none;
+  margin: .2rem 0;
+  padding: .5em 1em;
+  max-width: 15em;
+  border-radius: 5px;
+  background: #C6B19F;
+  transition: all 0.2s ease-in-out; }
+
+.site-header__nav > ul {
+  width: 100vw;
+  margin: 0;
+  display: flex;
+  list-style: none;
+  padding: 0; }
+.site-header__nav > ul > li {
+  flex: 1;
+  height: 55px;
+  position: relative;
+  text-align: center;
+  background: #C6B19F;
+  transition: all 0.2s ease-in-out; }
+  .site-header__nav > ul > li > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 1em; }
+.site-header__nav > ul > li:hover {
+  background: #EAE1DA; }
+.site-header__nav > ul > li > ul {
+  position: absolute;
+  width: 100%;
+  top: 55px;
+  left: 0;
+  z-index: 1;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: #C6B19F; }
+  .site-header__nav > ul > li > ul li {
+    background: #C6B19F;
+    transition: all 0.2s ease-in-out; }
+    .site-header__nav > ul > li > ul li:hover {
+      background: #EAE1DA; }
+    .site-header__nav > ul > li > ul li > a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      padding: .5em; }
+.site-header__nav > ul > li > ul {
+  display: none; }
+.site-header__nav > ul > li:hover > ul {
+  display: block; }
+@media screen and (max-width: 700px) {
+  .site-header__nav > ul {
+    display: block; }
+  .site-header__nav > ul li {
+    display: block; } }
+
+.page-home__panel {
+  font-size: 1rem;
+  max-width: 40em;
+  margin: 0 auto;
+  padding: 1em; }
+  .page-home__panel p {
+    text-align: justify;
+    line-height: 1.5em; }
+
+.page-home__panel h1 {
+  font-size: 3rem;
+  font-style: italic;
+  font-weight: normal;
+  text-align: center; }
+
+.page-home__panel__opener::first-letter {
+  display: block;
+  float: left;
+  padding: 0 6px 0px 0;
+  line-height: 1em;
+  font-size: 3em;
+  font-weight: bold; }
+
+.page-accommodation__panel {
+  font-size: 1rem;
+  max-width: 40em;
+  margin: 0 auto;
+  padding: 1em; }
+  .page-accommodation__panel p {
+    text-align: justify;
+    line-height: 1.5em; }
+
+.page-accommodation__panel h1 {
+  font-size: 3rem;
+  font-style: italic;
+  font-weight: normal;
+  text-align: center; }
+
+.page-accommodation__unit {
+  max-width: 30em;
+  margin: 10px auto;
+  background: #EEEEEE;
+  text-align: center;
+  transition: all 0.2s ease-in-out; }
+  .page-accommodation__unit:last-child {
+    margin-bottom: 50px; }
+
+.page-accommodation__unit:hover {
+  transform: scale(1.05); }
+
+.page-accommodation__unit a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 1em; }
+
+.page-accommodation__unit h1 {
+  font-size: 3rem;
+  font-style: italic;
+  font-weight: normal;
+  text-align: center;
+  font-size: 2em; }
+
+.page-accommodation__unit hr {
+  max-width: 5em;
+  border: none;
+  border-bottom: 1px solid #222222; }
+
+.page-location__map {
+  position: relative;
+  padding-bottom: 40vh;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%; }
+  .page-location__map iframe, .page-location__map object, .page-location__map embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40vh; }
+
+.page-location__panel {
+  font-size: 1rem;
+  max-width: 40em;
+  margin: 0 auto;
+  padding: 1em; }
+  .page-location__panel p {
+    text-align: justify;
+    line-height: 1.5em; }
+
+.page-location__panel h1 {
+  font-size: 3rem;
+  font-style: italic;
+  font-weight: normal;
+  text-align: center; }
+
+.page-location__panel__central {
+  text-align: center !important;
+  line-height: 1.1em !important;
+  padding: 1em;
+  font-size: 1.2em;
+  font-style: italic; }
+
+.page-bandb__panel {
+  font-size: 1rem;
+  max-width: 40em;
+  margin: 0 auto;
+  padding: 1em; }
+  .page-bandb__panel p {
+    text-align: justify;
+    line-height: 1.5em; }
+
+.page-bandb__panel h1 {
+  font-size: 3rem;
+  font-style: italic;
+  font-weight: normal;
+  text-align: center; }
+
+.page-bandb__panel__titler {
+  display: block;
+  max-width: 10em;
+  margin: 30px auto -25px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #222222;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px; }
+
+.page-bandb__rates {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center; }
+
+.page-bandb__rates h2 {
+  max-width: 10em;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 12px;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #222222;
+  font-weight: normal;
+  text-transform: uppercase; }
+
+.page-bandb__rates__table th {
+  font-weight: normal;
+  padding: 5px; }
+
+.page-bandb__rates__table .heading {
+  font-style: italic; }
+
+.page-bandb__rates__table .row-header {
+  font-style: italic; }
+
+.page-bandb__rates__table tr:nth-child(2n + 1) {
+  background: #EEEEEE; }
+
+.page-contact__panel {
+  font-size: 1rem;
+  max-width: 40em;
+  margin: 0 auto;
+  padding: 1em; }
+  .page-contact__panel p {
+    text-align: justify;
+    line-height: 1.5em; }
+
+.page-contact__panel h1 {
+  font-size: 3rem;
+  font-style: italic;
+  font-weight: normal;
+  text-align: center; }

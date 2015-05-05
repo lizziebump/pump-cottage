@@ -1,0 +1,175 @@
+// HOME
+.page-home{
+	//background: $c-light-grey;
+}
+
+	.page-home__panel{
+		@include body-panel;
+	}
+
+		.page-home__panel h1{
+			@include header-page;
+		}
+
+		.page-home__panel__opener::first-letter{
+			display: block;
+			float: left;
+			padding: 0 6px 0px 0;
+			line-height: 1em;
+			font-size: 3em;
+			font-weight: bold;
+		}
+
+// ACCOMMODATION
+.page-accommodation{
+	//background: $c-light-grey;
+}
+
+	.page-accommodation__panel{
+		@include body-panel;
+	}
+
+		.page-accommodation__panel h1{
+			@include header-page;
+		}
+
+	.page-accommodation__unit{
+		max-width: 30em;
+		margin: 10px auto;
+		background: $c-light-grey;
+		text-align: center;
+		transition: $s-smooth-ease;
+		&:last-child{ margin-bottom: 50px; }
+	}
+
+		.page-accommodation__unit:hover{
+			transform: scale(1.05);
+		}
+
+		.page-accommodation__unit a{
+			display: block;
+			width: 100%;
+			height: 100%;
+			padding: 1em;
+		}
+
+		.page-accommodation__unit h1{
+			@include header-page;
+			font-size: 2em;
+		}
+
+		.page-accommodation__unit hr{
+			max-width: 5em;
+			border: none;
+			border-bottom: 1px solid $c-black;
+		}
+
+// LOCATION
+.page-location{
+	//background: $c-light-grey;
+}
+
+	.page-location__map{
+		position: relative;
+		padding-bottom: 40vh;
+		height: 0;
+		overflow: hidden;
+		max-width: 100%;
+
+		iframe, object, embed{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 40vh; 
+		}
+	}
+
+	.page-location__panel{
+		@include body-panel;
+	}
+
+		.page-location__panel h1{
+			@include header-page;
+		}
+
+		.page-location__panel__central{
+			text-align: center !important;
+			line-height: 1.1em !important;
+			padding: 1em;
+			font-size: 1.2em;
+			font-style: italic;
+		}
+
+// ACCOMMODATION B&B ROOMS
+.page-bandb{
+
+}
+
+	.page-bandb__panel{
+		@include body-panel;
+	}
+
+		.page-bandb__panel h1{
+			@include header-page;
+		}
+
+		.page-bandb__panel__titler{
+			display: block;
+			max-width: 10em;
+			margin: 30px auto -25px;
+			padding-bottom: 5px;
+			border-bottom: 1px solid $c-black;
+			text-align: center;
+			text-transform: uppercase;
+			font-size: 12px;
+		}
+
+	.page-bandb__rates{
+		max-width: 500px;
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+	}
+
+		.page-bandb__rates h2{
+			max-width: 10em;
+			margin: 0 auto;
+			text-align: center;
+			font-size: 12px;
+			padding-bottom: 5px;
+			margin-bottom: 10px;
+			border-bottom: 1px solid $c-black;
+			font-weight: normal;
+			text-transform: uppercase;
+		}
+
+		.page-bandb__rates__table th{
+			font-weight: normal;
+			padding: 5px;
+		}
+
+			.page-bandb__rates__table .heading{
+				font-style: italic;
+			}
+
+			.page-bandb__rates__table .row-header{
+				font-style: italic;
+			}
+
+			.page-bandb__rates__table tr:nth-child(2n + 1){
+				background: $c-light-grey;
+			}
+
+// CONTACT
+.page-contact{
+
+}
+
+	.page-contact__panel{
+		@include body-panel;
+	}
+
+		.page-contact__panel h1{
+			@include header-page;
+		}

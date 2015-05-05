@@ -1,0 +1,68 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@charset "utf-8";
+
+// COLOURS
+$c-white: #FFFFFF;
+$c-warm: #C6B19F;
+$c-warm-light: #EAE1DA;
+$c-light-grey: #EEEEEE;
+$c-black: #222222;
+
+
+
+// FONTS
+$f-header: 'Baskerville', serif;
+$f-body: 'Baskerville', serif;
+
+@mixin s-page-heading{
+	font-family: $f-header;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 4em;
+	margin: 0;
+}
+
+
+// BREAKPOINTS
+$br-mobile: 700px;
+
+
+// DECORATIONS
+$s-smooth-ease: all .2s ease-in-out;
+
+@mixin button-reset{
+	-webkit-appearance: none;
+	border: none;
+	box-shadow: none;
+}
+
+@mixin header-page{
+	font-size: 3rem;
+	font-style: italic;
+	font-weight: normal;
+	text-align: center;
+}
+
+@mixin body-panel{
+	font-size: 1rem;
+	max-width: 40em;
+	margin: 0 auto;
+	padding: 1em;
+
+	p{
+		text-align: justify;
+		line-height: 1.5em;
+	}
+}
+
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+  "base",
+  "layout",
+  "pages"
+;
