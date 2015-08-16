@@ -7,15 +7,16 @@
 
 .site-header__banner{
   width: 100vw;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  padding: 1em;
+  @include display_flex;
+  @include justify-content(space-between);
+  @include align-items(center);
 
   img{ max-height: 100px; }
 
   @media screen and (max-width: $br-mobile){
-    flex-direction: row;
-    justify-content: center;
+    @include flex-direction(row);
+    @include justify-content(center);
 
     div{
       display: none;
@@ -24,21 +25,25 @@
 }
 
 .site-header__banner__book{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  @include display_flex;
+  @include flex-direction(column);
+  @include align-items(flex-end);
   padding: 1em;
-  max-width: 15em;
 }
 
-  .site-header__banner button{
-    @include button-reset;
-    margin: .2rem 0;
-    padding: .5em 1em;
-    max-width: 15em;
-    border-radius: 5px;
+  .site-header__banner__book a.phone{
+    font-weight: bold;
+  }
+
+  .site-header__banner__book a.email{
+    font-style: italic;
+  }
+
+  .book-button{
     background: $c-warm;
-    transition: $s-smooth-ease;
+    margin: 5px 0;
+    padding: 5px 10px;
+    border-radius: 5px;
   }
 
 // SITE HEADER NAVIGATION
@@ -47,13 +52,13 @@
   & > ul{
     width: 100vw;
     margin: 0;
-    display: flex;
+    @include display_flex;
     list-style: none;
     padding: 0;
   }
 
   & > ul > li{
-    flex: 1;
+    @include flex(1);
     height: 55px;
     position: relative;
     text-align: center;
@@ -94,6 +99,10 @@
         padding: .5em;
       }
     }
+
+    @media screen and (max-width: $br-mobile){
+      display: none;
+    }
   }
 
   // Dropdown Trigger
@@ -115,4 +124,43 @@
       display: block;
     }
   }
+}
+
+// IMAGES
+
+.photo-stripe{
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  background-position: center; 
+}
+
+.photo-group{
+  width: 100%;
+  height: 300px;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  display: flex;
+  transition: $s-smooth-ease;
+}
+
+  .photo-group:hover{
+    height: 90vh;
+  }
+
+  .photo-group > div{
+    min-width: 90%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+
+// TEASE
+
+.tease{
+  background: #DDD;
+  display: flex;
+  @include display_flex;
+  @include justify-content(content);
+  @include align-items(center);
 }

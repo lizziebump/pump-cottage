@@ -56,6 +56,88 @@ $s-smooth-ease: all .2s ease-in-out;
 		text-align: justify;
 		line-height: 1.5em;
 	}
+
+	h2{
+		font-size: 1.5rem;
+	}
+}
+
+// Box Sizing Prefixing
+@mixin box-sizing($type){
+	-webkit-box-sizing:$type;
+	-moz-box-sizing:$type;
+	box-sizing:$type;
+}
+
+// FLEXBOX MIXINS
+@mixin display_flex{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@mixin flex-direction($n){
+	@if $n == column{
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column
+	} @else {
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: row;
+		-ms-flex-direction: row;
+		flex-direction: row
+	}
+}
+
+@mixin order($n){
+  -webkit-box-ordinal-group: ($n + 1);
+  -webkit-order: $n;
+  -ms-flex-order: $n;
+  order: $n;
+}
+
+@mixin justify-content($n){
+
+	-webkit-justify-content: $n;
+	justify-content: $n;
+
+	@if $n == flex-end{
+		-webkit-box-pack: end;
+		-ms-flex-pack: end;
+	} @else if $n == flex-start{
+		-webkit-box-pack: end;
+		-ms-flex-pack: end;
+	} @else if $n == space-between{
+		-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
+	} @else {
+		-webkit-box-pack: $n;
+		-ms-flex-pack: $n;
+	}
+}
+
+@mixin align-items($n){
+	-webkit-box-align: $n;
+	-webkit-align-items: $n;
+	-ms-flex-align: $n;
+	align-items: $n;
+}
+
+@mixin flex($n){
+	-webkit-box-flex: $n;
+	-webkit-flex: $n;
+	-ms-flex: $n;
+	flex: $n;
+}
+
+@mixin flex-wrap($n){
+	-webkit-flex-wrap: $n;
+  -ms-flex-wrap: $n;
+  flex-wrap: $n;
 }
 
 
@@ -64,5 +146,6 @@ $s-smooth-ease: all .2s ease-in-out;
 @import
   "base",
   "layout",
-  "pages"
+  "pages",
+  "lightbox"
 ;

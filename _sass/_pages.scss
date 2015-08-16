@@ -1,6 +1,5 @@
 // HOME
 .page-home{
-	//background: $c-light-grey;
 }
 
 	.page-home__panel{
@@ -22,7 +21,6 @@
 
 // ACCOMMODATION
 .page-accommodation{
-	//background: $c-light-grey;
 }
 
 	.page-accommodation__panel{
@@ -33,10 +31,19 @@
 			@include header-page;
 		}
 
+		.page-accommodation__panel .book-button{
+			display: block;
+			margin: 10px auto;
+		}
+
 	.page-accommodation__unit{
-		max-width: 30em;
+		position: relative;
+		max-width: 40em;
 		margin: 10px auto;
-		background: $c-light-grey;
+
+		background-size: cover;
+		background-position: center;
+
 		text-align: center;
 		transition: $s-smooth-ease;
 		&:last-child{ margin-bottom: 50px; }
@@ -50,8 +57,25 @@
 			display: block;
 			width: 100%;
 			height: 100%;
-			padding: 1em;
+			padding: 6em 1em;
+			background: rgba(255,255,255,0.4);
+			transition: $s-smooth-ease;
+			
+			h1,p,hr{
+				opacity: 1;
+				transition: $s-smooth-ease;
+			}
+
 		}
+
+			.page-accommodation__unit a:hover{
+				background: rgba(255,255,255,0);
+
+				h1,p,hr{
+					opacity: 0;
+					filter: blur(20px);
+				}
+			}
 
 		.page-accommodation__unit h1{
 			@include header-page;
@@ -66,7 +90,6 @@
 
 // LOCATION
 .page-location{
-	//background: $c-light-grey;
 }
 
 	.page-location__map{
@@ -103,7 +126,7 @@
 
 // ACCOMMODATION B&B ROOMS
 .page-bandb{
-
+	margin-bottom: 5em;
 }
 
 	.page-bandb__panel{
@@ -128,8 +151,8 @@
 	.page-bandb__rates{
 		max-width: 500px;
 		margin: 0 auto;
-		display: flex;
-		justify-content: center;
+		@include display_flex;
+		@include justify-content(center);
 	}
 
 		.page-bandb__rates h2{
@@ -161,15 +184,53 @@
 				background: $c-light-grey;
 			}
 
-// CONTACT
-.page-contact{
-
+// GALLERY
+.page-gallery{
 }
 
-	.page-contact__panel{
+	.page-gallery__panel{
+		@include body-panel;
+		text-align: center;
+	}
+
+		.page-gallery__panel h1{
+			@include header-page;
+		}
+
+		.page-gallery__panel p{
+			text-align: center;
+		}
+
+	.page-gallery__grid{
+		@include display_flex;
+		@include justify-content(space-around);
+		@include flex-wrap(wrap);
+	}
+
+		.page-gallery__grid > a{
+			display: block;
+		}
+
+		.page-gallery__grid img{
+			max-width: 300px;
+			max-height: 200px;
+			height: auto;
+			margin: 10px;
+			padding: 0;
+		}
+
+// CONTACT
+.page-bookings{
+}
+
+	.page-bookings__panel{
 		@include body-panel;
 	}
 
-		.page-contact__panel h1{
+		.page-bookings__panel h1{
 			@include header-page;
+		}
+
+		#f2b-widget{
+			max-width: 300px !important;
 		}
