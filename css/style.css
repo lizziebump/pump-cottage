@@ -120,7 +120,7 @@ input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-se
 fieldset {
   border: 1px solid silver;
   margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em; }
+  padding: .35em .625em .75em; }
 
 legend {
   border: 0;
@@ -158,7 +158,7 @@ body {
 .text-link {
   text-decoration: underline;
   -webkit-transition: all 0.2s ease-in-out;
-          transition: all 0.2s ease-in-out; }
+  transition: all 0.2s ease-in-out; }
   .text-link:hover {
     color: #C6B19F; }
 
@@ -170,15 +170,12 @@ body {
   width: 100vw;
   padding: 1em;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: space-between;
   justify-content: space-between;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   -webkit-box-align: center;
-  -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center; }
   .site-header__banner img {
@@ -187,10 +184,8 @@ body {
     .site-header__banner {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
-      -webkit-flex-direction: row;
       -ms-flex-direction: row;
       flex-direction: row;
-      -webkit-justify-content: center;
       justify-content: center;
       -webkit-box-pack: center;
       -ms-flex-pack: center; }
@@ -199,16 +194,13 @@ body {
 
 .site-header__banner__book {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
   -webkit-box-align: flex-end;
-  -webkit-align-items: flex-end;
   -ms-flex-align: flex-end;
   align-items: flex-end;
   padding: 1em; }
@@ -229,7 +221,6 @@ body {
   width: 100vw;
   margin: 0;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   list-style: none;
@@ -237,7 +228,6 @@ body {
 
 .site-header__nav > ul > li {
   -webkit-box-flex: 1;
-  -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
   height: 55px;
@@ -245,7 +235,7 @@ body {
   text-align: center;
   background: #C6B19F;
   -webkit-transition: all 0.2s ease-in-out;
-          transition: all 0.2s ease-in-out; }
+  transition: all 0.2s ease-in-out; }
   .site-header__nav > ul > li > a {
     display: block;
     width: 100%;
@@ -268,7 +258,7 @@ body {
   .site-header__nav > ul > li > ul li {
     background: #C6B19F;
     -webkit-transition: all 0.2s ease-in-out;
-            transition: all 0.2s ease-in-out; }
+    transition: all 0.2s ease-in-out; }
     .site-header__nav > ul > li > ul li:hover {
       background: #EAE1DA; }
     .site-header__nav > ul > li > ul li > a {
@@ -304,11 +294,10 @@ body {
   overflow-y: hidden;
   overflow-x: scroll;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-transition: all 0.2s ease-in-out;
-          transition: all 0.2s ease-in-out; }
+  transition: all 0.2s ease-in-out; }
 
 .photo-group:hover {
   height: 90vh; }
@@ -323,15 +312,12 @@ body {
   background: #DDD;
   display: flex;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: content;
   justify-content: content;
   -webkit-box-pack: content;
   -ms-flex-pack: content;
   -webkit-box-align: center;
-  -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center; }
 
@@ -389,13 +375,12 @@ body {
   background-position: center;
   text-align: center;
   -webkit-transition: all 0.2s ease-in-out;
-          transition: all 0.2s ease-in-out; }
+  transition: all 0.2s ease-in-out; }
   .page-accommodation__unit:last-child {
     margin-bottom: 50px; }
 
 .page-accommodation__unit:hover {
   -webkit-transform: scale(1.05);
-      -ms-transform: scale(1.05);
           transform: scale(1.05); }
 
 .page-accommodation__unit a {
@@ -405,11 +390,11 @@ body {
   padding: 6em 1em;
   background: rgba(255, 255, 255, 0.4);
   -webkit-transition: all 0.2s ease-in-out;
-          transition: all 0.2s ease-in-out; }
+  transition: all 0.2s ease-in-out; }
   .page-accommodation__unit a h1, .page-accommodation__unit a p, .page-accommodation__unit a hr {
     opacity: 1;
     -webkit-transition: all 0.2s ease-in-out;
-            transition: all 0.2s ease-in-out; }
+    transition: all 0.2s ease-in-out; }
 
 .page-accommodation__unit a:hover {
   background: rgba(255, 255, 255, 0); }
@@ -501,10 +486,8 @@ body {
   max-width: 500px;
   margin: 0 auto;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: center;
   justify-content: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center; }
@@ -556,14 +539,11 @@ body {
 
 .page-gallery__grid {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: space-around;
   justify-content: space-around;
   -webkit-box-pack: space-around;
   -ms-flex-pack: space-around;
-  -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
 
@@ -599,7 +579,7 @@ body {
 
 /* Preload images */
 body:after {
-  content: url(../images/lightbox/close.png) url(../images/lightbox/loading.gif) url(../images/lightbox/prev.png) url(../images/lightbox/next.png);
+  content: url(https://s3.eu-west-2.amazonaws.com/jackwreid/pumpcottage/lightbox/close.png) url(https://s3.eu-west-2.amazonaws.com/jackwreid/pumpcottage/lightbox/loading.gif) url(https://s3.eu-west-2.amazonaws.com/jackwreid/pumpcottage/lightbox/prev.png) url(https://s3.eu-west-2.amazonaws.com/jackwreid/pumpcottage/lightbox/next.png);
   display: none; }
 
 .lightboxOverlay {
@@ -661,7 +641,7 @@ body:after {
   width: 32px;
   height: 32px;
   margin: 0 auto;
-  background: url(../images/lightbox/loading.gif) no-repeat; }
+  background: url(../lightbox/loading.gif) no-repeat; }
 
 .lb-nav {
   position: absolute;
@@ -687,7 +667,7 @@ body:after {
   width: 34%;
   left: 0;
   float: left;
-  background: url(../images/lightbox/prev.png) left 48% no-repeat;
+  background: url(../lightbox/prev.png) left 48% no-repeat;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
   -webkit-transition: opacity 0.6s;
@@ -701,7 +681,7 @@ body:after {
   width: 64%;
   right: 0;
   float: right;
-  background: url(../images/lightbox/next.png) right 48% no-repeat;
+  background: url(../lightbox/next.png) right 48% no-repeat;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
   -webkit-transition: opacity 0.6s;
@@ -751,7 +731,7 @@ body:after {
   float: right;
   width: 30px;
   height: 30px;
-  background: url(../images/lightbox/close.png) top right no-repeat;
+  background: url(../lightbox/close.png) top right no-repeat;
   text-align: right;
   outline: none;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);

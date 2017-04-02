@@ -3,7 +3,8 @@ title: Pump Cottage Dorset
 email: pumpcottagedorset@gmail.com
 description: > # Pump Cottage Dorset.
 baseurl: ""
-url: "http://pumpcottagedorset.com" # the base hostname & protocol for your site
+url: "https://pumpcottagedorset.com"
+s3: "https://s3.eu-west-2.amazonaws.com/jackwreid/pumpcottage"
 
 # Build settings
 markdown: kramdown

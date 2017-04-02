@@ -5,6 +5,10 @@
   "author": "Jack Reid",
   "repository": "https://github.com/JackWReid/pump-cottage.git",
   "homepage": "http://jackwreid.uk",
+  "scripts": {
+    "deploy": "gulp js && gulp sass && jekyll build && now --static _site",
+    "start": "jekyll serve"
+  },
   "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^3.0.1",
