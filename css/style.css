@@ -380,7 +380,7 @@ body {
   width: 100%;
   height: 100%;
   padding: 6em 1em;
-  background: white;
+  background: rgba(255, 255, 255, 0.5);
   transition: all 0.2s ease-in-out; }
   .page-accommodation__unit a h1, .page-accommodation__unit a p, .page-accommodation__unit a hr {
     opacity: 1;
@@ -538,14 +538,23 @@ body {
   flex-wrap: wrap; }
 
 .page-gallery__grid > a {
-  display: block; }
+  display: block;
+  width: 20%;
+  height: auto; }
+  @media (max-width: 1000px) {
+    .page-gallery__grid > a {
+      width: 25%; } }
+  @media (max-width: 700px) {
+    .page-gallery__grid > a {
+      width: 33.33333%; } }
+  @media (max-width: 500px) {
+    .page-gallery__grid > a {
+      width: 50%; } }
 
 .page-gallery__grid img {
-  max-width: 300px;
-  max-height: 200px;
-  height: auto;
-  margin: 10px;
-  padding: 0; }
+  display: block;
+  width: 100%;
+  padding: 10px; }
 
 .page-bookings__panel {
   font-size: 1rem;

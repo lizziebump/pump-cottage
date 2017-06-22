@@ -207,16 +207,28 @@
 		@include flex-wrap(wrap);
 	}
 
-		.page-gallery__grid > a{
+		.page-gallery__grid > a {
 			display: block;
+			width: 20%;
+			height: auto;
+
+			@media (max-width: 1000px) {
+				width: 25%;
+			}
+
+			@media (max-width: 700px) {
+				width: (100% / 3);
+			}
+
+			@media (max-width: 500px) {
+				width: 50%;
+			}
 		}
 
-		.page-gallery__grid img{
-			max-width: 300px;
-			max-height: 200px;
-			height: auto;
-			margin: 10px;
-			padding: 0;
+		.page-gallery__grid img {
+			display: block;
+			width: 100%;
+			padding: 10px;
 		}
 
 // CONTACT
