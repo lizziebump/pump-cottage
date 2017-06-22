@@ -58,9 +58,9 @@
 			width: 100%;
 			height: 100%;
 			padding: 6em 1em;
-			background: rgba(255,255,255,0.4);
+			background: rgba(255,255,255,0.5);
 			transition: $s-smooth-ease;
-			
+
 			h1,p,hr{
 				opacity: 1;
 				transition: $s-smooth-ease;
@@ -104,7 +104,7 @@
 			top: 0;
 			left: 0;
 			width: 100%;
-			height: 40vh; 
+			height: 40vh;
 		}
 	}
 
