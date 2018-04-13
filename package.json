@@ -7,6 +7,7 @@
   "homepage": "http://jackwreid.uk",
   "scripts": {
     "deploy": "gulp js && gulp sass && jekyll build && now --static _site",
+    "build": "gulp js && gulp sass && jekyll build",
     "start": "jekyll serve"
   },
   "devDependencies": {
