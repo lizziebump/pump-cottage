@@ -4,11 +4,10 @@
   "version": "1.0.0",
   "author": "Jack Reid",
   "repository": "https://github.com/JackWReid/pump-cottage.git",
-  "homepage": "http://jackwreid.uk",
+  "homepage": "https://pumpcottagedorset.com",
   "scripts": {
-    "deploy": "gulp js && gulp sass && jekyll build && now --static _site",
-    "build": "gulp js && gulp sass && jekyll build",
-    "start": "jekyll serve"
+    "localbuild": "gulp js && gulp sass && jekyll build",
+    "dev": "jekyll serve"
   },
   "devDependencies": {
     "gulp": "^3.9.0",
