@@ -578,7 +578,7 @@ body {
 
 /* Preload images */
 body:after {
-  content: url(https://pumpcottagedorset.ams3.cdn.digitaloceanspaces.com/lightbox/close.png) url(https://pumpcottagedorset.ams3.cdn.digitaloceanspaces.com/lightbox/loading.gif) url(https://pumpcottagedorset.ams3.cdn.digitaloceanspaces.com/lightbox/prev.png) url(https://pumpcottagedorset.ams3.cdn.digitaloceanspaces.com/lightbox/next.png);
+  content: url(https://jackreid.xyz/img/lightbox/close.png) url(https://jackreid.xyz/img/lightbox/loading.gif) url(https://jackreid.xyz/img/lightbox/prev.png) url(https://jackreid.xyz/img/lightbox/next.png);
   display: none; }
 
 .lightboxOverlay {
