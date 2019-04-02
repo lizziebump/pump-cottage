@@ -1,9 +1,0 @@
-{
-  "alias": "pumpcottagedorset.com",
-  "type": "static",
-  "static": {
-    "trailingSlash": false,
-    "directoryListing": false,
-    "public": "_site"
-  }
-}
