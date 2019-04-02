@@ -578,7 +578,7 @@ body {
 
 /* Preload images */
 body:after {
-  content: url(https://jackreid.xyz/img/lightbox/close.png) url(https://jackreid.xyz/img/lightbox/loading.gif) url(https://jackreid.xyz/img/lightbox/prev.png) url(https://jackreid.xyz/img/lightbox/next.png);
+  content: url(https://pumpcottagedorset.com/img/lightbox/close.png) url(https://pumpcottagedorset.com/img/lightbox/loading.gif) url(https://pumpcottagedorset.com/img/lightbox/prev.png) url(https://pumpcottagedorset.com/img/lightbox/next.png);
   display: none; }
 
 .lightboxOverlay {
